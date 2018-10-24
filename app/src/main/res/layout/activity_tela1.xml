@@ -26,7 +26,8 @@
         android:layout_height="wrap_content"
         android:text="3 pontos"
         android:textStyle="bold"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:id="@+id/TvPontuacao"/>
 
 </LinearLayout>
     <TextView
@@ -47,12 +48,14 @@
         <ImageView
             android:layout_width="165dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/bastoise" />
+            android:src="@drawable/charizard"
+            android:id="@+id/IvJogadaPlayer"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/bastoise" />
+            android:src="@drawable/bastoise"
+            android:id="@+id/IvJogadaIA"/>
 
     </LinearLayout>
 
@@ -62,20 +65,24 @@
         android:orientation="horizontal"
         android:padding="16dp">
 
-        <ImageButton
-            android:layout_width="113dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/charizard" />
+       <Button
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:background="@drawable/charizard"
+           android:id="@+id/Btcharizand"/>
 
-        <ImageButton
+        <Button
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/bastoise" />
+            android:layout_height="100dp"
+            android:background="@drawable/bastoise"
+            android:id="@+id/Btblastoise"/>
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/venusaur"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/venusaur"
+            android:id="@+id/Btvenusaur"/>
+
 
 
     </LinearLayout>
