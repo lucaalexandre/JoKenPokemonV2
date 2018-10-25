@@ -15,6 +15,7 @@ class Tela1Activity : AppCompatActivity() {
     private val BLASTOISE = 2
     private val VENUSAUR = 3
 
+     var pontuacao = 0
 
 
 
@@ -71,7 +72,11 @@ class Tela1Activity : AppCompatActivity() {
 
         }
     }
-    private fun venceu(){
+     fun venceu(){
+        pontuacao += 3
+
+
+
 
     }
     private  fun  perdeu(){
@@ -80,6 +85,7 @@ class Tela1Activity : AppCompatActivity() {
 
     }
     private fun empatou(){
+        pontuacao += 1
 
     }
 }

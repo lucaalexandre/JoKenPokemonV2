@@ -4,6 +4,8 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import br.com.fiap.jokenpokemon.model.Pontuacao
+import retrofit2.Retrofit
 
 class GameOverActivity : AppCompatActivity() {
 
@@ -13,6 +15,11 @@ class GameOverActivity : AppCompatActivity() {
 
         val jogarNovamenteBt = findViewById<Button>(R.id.BtJogarNovamente)
         val MenuBt = findViewById<Button>(R.id.BtMenu)
+
+        val pontuacao = Pontuacao("Luca Alexandre", 500)
+        val retrofit = Retrofit.Builder()
+
+               
 
 
         MenuBt.setOnClickListener{
